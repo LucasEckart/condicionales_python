@@ -41,3 +41,18 @@ Alumno:
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+numero_1 = int(input("Ingrese el primer número entero: \n"))
+numero_2 = int(input("Ingrese el segundo número entero: \n"))
+
+diferencia = numero_1 - numero_2
+
+if diferencia > 0:
+  res_1 = 1
+elif diferencia < 0:
+  res_1 = 2
+else:
+  res_1 = 3
+
+
+print(res_1)

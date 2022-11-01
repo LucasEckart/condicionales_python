@@ -44,6 +44,9 @@ Alumno:
 - Imprimir al final del programa el puntaje total
 '''
 
+from tkinter.tix import InputOnly
+
+
 print('Juego de trivia')
 puntaje = 0
 
@@ -63,3 +66,42 @@ pregunta_5 = "¿Cuál es la capital de Venezuela?"
 respuesta_5 = "caracas"
 
 # Empezar aquí la resolución del ejercicio
+
+
+respuesta_usuario_1 = str(input(f'primera pregunta: {pregunta_1}: ')).lower()
+if respuesta_usuario_1 == respuesta_1:
+  print ('Respuesta correcta')
+  puntaje += 10
+else:
+  print('Respuesta incorrecta')  
+
+respuesta_usuario_2 = str(input(f'Siguiente pregunta: {pregunta_2}: ')).lower()
+if respuesta_usuario_2 == respuesta_2:
+  print ('Respuesta correcta')
+  puntaje += 10
+else:
+  print('Respuesta incorrecta')  
+
+respuesta_usuario_3 = str(input(f'Siguiente pregunta: {pregunta_3}: ')).lower()
+if respuesta_usuario_3 == respuesta_3:
+  print ('Respuesta correcta')
+  puntaje += 10
+else:
+  print('Respuesta incorrecta')  
+
+respuesta_usuario_4 = str(input(f'Siguiente pregunta: {pregunta_4}: ')).lower()
+if respuesta_usuario_4 == respuesta_4:
+  print ('Respuesta correcta')
+  puntaje += 10
+else:
+  print('Respuesta incorrecta')  
+
+respuesta_usuario_5 = str(input(f'Siguiente pregunta: {pregunta_5}: ')).lower()
+if respuesta_usuario_5 == respuesta_5:
+  print ('Respuesta correcta')
+  puntaje += 10
+else:
+  print('Respuesta incorrecta')  
+
+print ('El puntaje final es:', puntaje)
+  
